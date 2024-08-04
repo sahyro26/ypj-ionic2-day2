@@ -14,7 +14,12 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Navigation example</h1>
+    <ion-button expand="full" [routerLink]="['/products']">Go to Product page</ion-button>
+    <ion-button color="tertiary" expand="full" (click)="goToAbout()">Go to About page</ion-button>
+    <ion-button expand="full" color="danger" (click)="goToContact()">Go to Contact page</ion-button>
+    <ion-button expand="full" color="warning" (click)="goToDetails()">Go to Details page</ion-button>
+    <ion-button expand="full" color="success" (click)="goToProfile()">Go to Profile page</ion-button>
+    <ion-button expand="full" color="secondary" (click)="goToAddScore()">Go to Add Score page</ion-button>
   </div>
 </ion-content>
